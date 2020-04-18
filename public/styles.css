@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  margin: 0px;
+  padding: 0px;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  background: white;
+}
+
+/*=== HEADER ===*/
+nav {
+  padding-top: 31px;
+  padding-bottom: 50px;
+}
+
+.nav-index {
+  height: 93px;
+  padding-top: 36px;
+  padding-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  font-size: 16px;
+  color: #111111;
+  line-height: 19px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+li a.active {
+  font-weight: bold;
+}
+
+.li-sobre {
+  margin-left: 122.4px;
+  margin-right: 30px;
+}
+
+/*=== MAIN BOX ===*/
+.title-background {
+  position: relative;
+  width: 940px;
+  height: 366px;
+  background: #fbdfdb;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+
+.title-background h1 {
+  position: absolute;
+  font-family: 'Roboto', bold;
+  font-size: 32px;
+  color: #111111;
+  margin: 117px 575px 211px 60px;
+}
+
+.title-background p {
+  position: absolute;
+  opacity: 0.7;
+  font-size: 18px;
+  color: #000000;
+  line-height: 28px;
+  margin: 165px 564px 117px 60px;
+}
+
+.chef-img {
+  margin: 66px 100px 0px 624px;
+}
+
+/*=== GRID ===*/
+.cards {
+  max-width: 940px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto 50px;
+  column-gap: 20px;
+  row-gap: 30px;  
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card img {
+  border-radius: 15px;
+  object-fit: cover;
+  width: 300px;
+  height: 140px;
+}
+
+.card-content {
+  margin-top: 20px;
+}
+
+h3.card-nome-prato {
+  font-size: 18px;
+  color: #111111;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+p.card-autor-prato {
+  font-size: 14px;
+  color: #777777;
+}
+
+/*=== FOOTER ===*/
+footer {
+  margin: auto;
+  line-height: 62px; 
+  height: 62px;
+  width: 1400px;
+  background-color: #EEEEEE; 
+}
+
+footer p {
+  font-size: 14px;
+  color: #999999;
+  text-align: center;
+}
+
+/*=== PAGINA SOBRE ===*/
+.p-sobre {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.h2-sobre {
+  display: inline-block;
+  font-size: 24px;
+  color: #111111;
+  margin-bottom: 20px;
+}
+
+.h3-sobre {
+  display: inline-block;
+  font-size: 20px;
+  color: #111111;
+  margin-bottom: 20px;
+}
+
+.margin-to-footer {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+
+/*=== RECIPE ===*/
+.recipe-img {
+  display: block;
+  margin: 0 auto 50px;
+  border-radius: 15px;
+}
+
+.recipe-title {
+  margin-bottom: 50px;
+}
+
+.recipe-title h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #111111;
+  margin-bottom: 4px;
+}
+
+.recipe-title p {
+  font-size: 20px;
+  text-align: center;
+  color: #777777;
+}
+
+.body-titles {
+  margin-bottom: 20px;
+}
+
+.body-titles h2 {
+  display: inline-block;
+  font-size: 24px;
+  color: #111111;
+  margin-right: 8px;
+}
+
+.body-titles span {
+  font-size: 12px;
+  color: #999999;
+  font-weight: bold;
+}
+
+.recipe-items {
+  list-style: disc inside;
+  margin-bottom: 39px;
+}
+
+.recipe-items li:before {
+  content: "";
+  margin-left: -10px;
+}
+
+.recipe-items li {
+  display: list-item;
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+}
+
+.info-item {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+
+.btn-span {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}

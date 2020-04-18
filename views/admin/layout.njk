@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="/admin.css">
+    <title>Foodfy</title>
+  </head>
+
+  <body>
+    
+    {% block header %}
+    <header>
+      <img src="/logo_white.png" alt="">
+    </header>
+    {% endblock %}
+    
+    <div id="wrapper">
+      {% block content %}{% endblock %}
+    </div>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>

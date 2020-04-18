@@ -1,0 +1,50 @@
+{% extends 'admin/layout.njk' %}
+
+{% block content %}
+      <div class="flex-container">
+        <h2 class="title-admin">Editando receita</h2>
+        <div>
+          <a href="/admin/recipes/{{ recipe.id }}/edit" class="btn-delete">Deletar</a>
+          <button type="submit" form="edit-create" class="btn-save-edt">Salvar receita</button>
+        </div>
+      </div>
+      
+      <form id="edit-create" method="POST" action="/admin/recipes">
+        <div class="img-recipe">
+          <p>Imagem da receita</p>
+            <div>
+              <input 
+                type="url"
+                name="recipe_img"
+                placeholder="http://"
+                value="{{ recipe.image }}"
+              >
+            </div>
+        </div>
+        
+        <div id="ingredients">
+          <p>Ingredientes</p>
+          <div class="ingredient">
+            <input type="text" name="ingredients[]" value="" placeholder="Ingrediente" />
+          </div>
+        </div>
+        <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
+        
+        <div id="steps">
+          <p>Modo de preparo</p>
+          <div class="step">
+            <input type="text" name="steps[]" value="" placeholder="Passo" />
+          </div>
+        </div>
+        <button type="button" class="add-step">Adicionar novo passo</button>
+      
+        <div id="additionals">
+          <div class="additional">
+            <p>Informacões Adicionais</p>
+            <input type="text" name="additionals[]" value="" placeholder="" />
+          </div>
+        </div>
+      </form>
+      
+      
+{% endblock %}

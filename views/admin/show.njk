@@ -1,0 +1,45 @@
+{% extends 'admin/layout.njk' %}
+
+{% block content %}
+      <div class="flex-container">
+        <h2 class="title-admin">Receita: {{recipe.title}}</h2>
+        <a href="/admin/recipes/{{recipe.id}}/edit" class="btn-save-edt">Editar receita</a>
+      </div>
+      
+      <img class="recipe-img" src="{{recipe.image}}" alt="Image of {{recipe.title}}">
+
+      <div class="recipe-title">
+        <h1>{{recipe.title}}</h1>
+        <p>por {{recipe.author}}</p>
+      </div>
+      
+      <main>
+        <div class="body-titles">
+          <h2>Ingredientes</h2>
+          <span class="btn-span">ESCONDER</span>
+        </div>
+        <ul class="recipe-items visibility">
+          {% for item in recipe.ingredients %}
+            <li>{{item}}</li>
+          {% endfor %}
+        </ul>
+            
+        <div class="body-titles">
+          <h2>Modo de preparo</h2>
+          <span class="btn-span">ESCONDER</span>
+        </div>
+        <ul class="recipe-items visibility">
+          {% for item in recipe.preparation %}
+            <li>{{item}}</li>
+          {% endfor %}
+        </ul>
+      
+        <div class="body-titles">
+          <h2>Informações adicionais</h2>
+          <span class="btn-span">ESCONDER</span>
+        </div>
+        <div class="info-item visibility">
+          <p>{{recipe.information}}</p>
+        </div>
+      </main>
+{% endblock %}

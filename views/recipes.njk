@@ -1,0 +1,28 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+  <main>
+    <section class="cards">
+      {% for item in items %}    
+        <div class="card" id="{{loop.index}}">
+          <img src="{{item.image}}" alt="Recipe of {{item.title}}">
+          <div class="card-content">
+            <h3 class="card-nome-prato">{{item.title}}</h3>
+            <p class="card-autor-prato">{{item.author}}</p>
+          </div>
+        </div>
+      {% endfor %}   
+      {% for item in items %}    
+        <div class="card" id="{{loop.index}}">
+          <img src="{{item.image}}" alt="Recipe of {{item.title}}">
+          <div class="card-content">
+            <h3 class="card-nome-prato">{{item.title}}</h3>
+            <p class="card-autor-prato">{{item.author}}</p>
+          </div>
+        </div>
+      {% endfor %}     
+    </section>
+  </main>
+
+{% endblock %}

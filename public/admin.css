@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+  --primary-color: #6558C3;  
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  margin: 0px;
+  padding: 0px;
+}
+
+/*=== HEADER & PAGE TITLE ===*/
+header {
+  max-width: 1400px;
+  margin: 0 auto 55px;
+  height: 80px;
+  background: #111111;
+}
+
+header img {
+  padding: 26.5px 0 26.5px 231px;
+}
+
+#wrapper {  
+  left: 230px;
+  max-width: 940px;
+  margin: 0 auto; 
+  background: white;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.flex-container div a {
+  margin-right: 10px;
+}
+
+.title-admin {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #111111;
+}
+
+.btn-save-edt {
+  text-align: center;
+  text-decoration:none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 37px;
+  height: 37px;
+  width: 139px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  display: inline-block;
+  text-align: center;
+  text-decoration:none;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 37px;
+  height: 37px;
+  width: 92px;
+  background: #DC4747;
+  border-radius: 4px;
+}
+
+/*=== GRID MANAGE RECIPE ===*/
+.cards-admin {
+  max-width: 940px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+  column-gap: 20px;
+  row-gap: 20px;  
+}
+
+.card-admin {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  cursor: pointer;
+  column-gap: 20px;
+}
+
+.card-admin img {
+  border-radius: 15px;
+  object-fit: cover;
+  width: 172px;
+  height: 80px;
+}
+
+h3.card-nome-prato {
+  font-size: 18px;
+  color: #111111;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+p.card-autor-prato {
+  font-size: 14px;
+  color: #777777;
+  margin-bottom: 10px;
+}
+
+a.card-visualizar-prato {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color:var(--primary-color);
+}
+
+/*=== RECIPE ===*/
+.recipe-img {
+  display: block;
+  margin: 20px 0 50px 0;
+  border-radius: 15px;
+}
+
+.recipe-title {
+  margin-bottom: 50px;
+}
+
+.recipe-title h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #111111;
+  margin-bottom: 4px;
+}
+
+.recipe-title p {
+  font-size: 20px;
+  text-align: center;
+  color: #777777;
+}
+
+.body-titles {
+  margin-bottom: 20px;
+}
+
+.body-titles h2 {
+  display: inline-block;
+  font-size: 24px;
+  color: #111111;
+  margin-right: 8px;
+}
+
+.body-titles span {
+  font-size: 12px;
+  color: #999999;
+  font-weight: bold;
+}
+
+.recipe-items {
+  list-style: disc inside;
+  margin-bottom: 39px;
+}
+
+.recipe-items li:before {
+  content: "";
+  margin-left: -10px;
+}
+
+.recipe-items li {
+  display: list-item;
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+}
+
+.info-item {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+
+.btn-span {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+/*=== CREATE / EDIT ===*/
+#edit-create {
+  font-weight: bold;
+  font-size: 16px;
+  color: #111111;
+}
+
+#edit-create div > p {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  height: 49px;
+  font-size: 16px;
+  color: #111111;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+}
+
+input:last-child {
+  margin-bottom: none;
+}
+
+.additional input {
+  width: 100%;
+  height: 257px;
+  text-align: left;
+  text-indent: inherit;
+}
+
+.add-ingredient,
+.add-step,
+.img-recipe {
+  margin-bottom: 30px;
+}
+
+
+#ingredients,
+#steps {
+  margin-bottom: 15px;
+}
+
+button[type="button"] {
+  border: none;
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
