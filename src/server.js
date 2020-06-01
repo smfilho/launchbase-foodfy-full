@@ -12,7 +12,7 @@ server.use(express.static('public')); // Read static files from public paste
 server.use(routes); //use variable routes
 server.set('view engine', 'njk');
 
-nunjucks.configure('views', {
+nunjucks.configure('src/app/views', {
   express: server,
   autoescape: false, // Allow html to run inside variables with html content
   noCache: true
