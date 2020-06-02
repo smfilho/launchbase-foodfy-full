@@ -1,6 +1,6 @@
 module.exports = {
   index(req, res) {
-    return res.render("admin/recipes");
+    return res.render('admin/recipes');
   },
   create(req, res) {
     return res.render('admin/create');
@@ -27,7 +27,12 @@ module.exports = {
     `
 
     const values = [
-      req.body
+      req.body.image,
+      req.body.title,
+      req.body.ingredients,
+      req.body.preparation,
+      req.body.information,
+      date(Date.now()).iso
     ]
     return;
   },
